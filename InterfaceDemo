@@ -1,0 +1,35 @@
+
+using System;
+
+namespace interfacedemo
+{
+    public interface i1
+    {
+        void display1();
+        void display2();
+    }
+
+    class Program : i1
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hi");
+
+            Program program = new Program();
+            program.display1();
+            program.display2();
+        }
+
+        #region i1 Members
+        public void display1()
+        {
+            Console.WriteLine("Display1");
+        }
+
+        public void display2()
+        {
+            Console.WriteLine("Display2");
+        }
+        #endregion
+    }
+}
